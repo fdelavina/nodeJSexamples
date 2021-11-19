@@ -1,0 +1,39 @@
+npm es una herramienta "Node package manager"
+Nos permite administrar paquetes y modulos nuevos para nuestro proyecto
+
+Muchas veces queremos utilizar otro codigo que otros creadores han creado, con npm lo podemos encontrar.
+la pagina es npmjs.com y es un repositorio enorme. 
+En esa pagina se puede buscar un modulo y usarlo
+
+Para instalar algun repositorio hay que poner
+>>> npm install colors 
+
+Se agregara un nuevo archivo
+node_modules
+package.json -> lista los modulos de los paquetes instalados
+ahora se puede usar require("colors") en el codigo
+
+
+usando un comando de npm llamado init
+>>> npm init
+
+te permite crear el archivo package.json
+
+que te crea metainformacion del proyecto como 
+el nombre, dependencias,etc 
+Con esto ya se tiene toda la informacion necesaria 
+por ejemplo para subirlo a un servidor de la nube
+utilizando unicamente el comando 
+>>> npm install
+ se va a instalar todo lo necesario 
+por tanto,en produccion, solo es necesario pasarle el codigo y 
+el package.json
+
+en el package.json hay un campo llamado start en el cual 
+se le puede poner lo que se quiere que ejecute tambien 
+cuando se usa >>>npm start
+por ejemplo se le podria poner que llame al index.js 
+(ver nuestro package.json)
+tambien se le puede pnoner en script nuevos campos distintos a start
+(por ejemplo "desarrollo") y que se ejecute cuando se usa npm 
+>>>npm run desarrollo

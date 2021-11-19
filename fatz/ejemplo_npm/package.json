@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "name": "ejemplo_npm",
+  "version": "1.0.0",
+  "description": "primer ejemplo con init",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "example"
+  ],
+  "author": "franhisco",
+  "license": "ISC"
+}
