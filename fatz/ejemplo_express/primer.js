@@ -32,9 +32,16 @@ complicado de leer. por eso se debe usar express
  const app = express(); //se ejecuta express y se devuelve un obj
                         //que es un servidor
 
-app.get('/', (req,res)=>{
+app.get('/hola', (req,res)=>{
     res.send("hola mundo mijo");
 }) //cuando se visite la app se enviara esto
+
+app.get('/about',(req,res)=>{
+    res.send('about mijo3');
+});
+app.put('/contact',(req,res)=>{
+    res.send('update request received');
+});
 app.listen(3000, ()=> {
     console.log('servidor en puerto 3000');
 });

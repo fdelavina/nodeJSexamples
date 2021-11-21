@@ -1,0 +1,11 @@
+nodemon ayuda a no tener que cancelar la consola
+teniendo siempre el servidor activo aunque se 
+cambie el codigo y siempre vigila el codigo
+
+se ha instalado usando 
+>>>npm install nodemon
+se podria instalar tambien para que sea solo
+una dependencia de desarrollo y no de produccion usando
+>>> npm install nodemon -D
+se ejecuta con 
+>>> npx nodemon index.js
