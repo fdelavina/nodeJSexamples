@@ -40,3 +40,32 @@ para llamarlo se pone antes del app.listen lo siguiente
 app.use (express.static());
 escribiendo en el navegador http://localhost:3000/ te
 manda directamente el html
+
+por otro lado, estan los settings, que son las configuraciones
+de express.
+Para hacer eso se usa un metodo de express llamado set.
+con este metodo se puede usar por ejemplo para poner el 
+nombre de la applicacion
+>>> app.set("appName", "mi aplicacion jave");
+en este caso se a establecido una variable que no existe
+llamada appName y luego, se puede usar con app.get
+
+Tambien express tiene variables de nombres reservados, como el port
+app.set('port',5000) y luego se llama con app.get
+
+Un concepto importante en express es utilizar 
+Los motores de plantilla.
+nos ayudan a extender los html. por ejemplo para usar
+con bbdd
+
+vamos a instalar un motor de plantilla que se llama ejs
+se instala con 
+>>>npm install ejs
+ y se llama en el codigo con el set
+ app.set('view engine','ejs')
+y se crea una carpeta que se llame views y dentro un 
+archivo que se llame index.ejs y lo rellenamos con 
+un html5 tipico
+¿para que sirve? se quiere separar la funcionalidad
+de la vista
+
